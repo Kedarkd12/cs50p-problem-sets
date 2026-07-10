@@ -12,8 +12,8 @@ num2=int(input("Enter the second number:"))
 op=int(input("\nFrom the below list of operations:\n   1.Addition\n   2.Subtraction\n   3.Multiplication\n   4.Division\nEnter the number of the operation you want to perform:"))
 
 #switch case using function
-def get_operation_selected(op):
-    match op:
+def get_operation_selected(calc):
+    match calc:
         case 1:
             print(f"\n{num1} + {num2} = {num1+num2}")
         case 2:
