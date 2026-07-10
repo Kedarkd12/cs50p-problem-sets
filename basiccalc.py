@@ -1,6 +1,7 @@
 #Ask user details
-name=input("Enter your name:")
-print(f"Hello \"{name}\",",end=" ")
+name=input("Enter your full name:").strip().title()
+first,last=name.split(" ")
+print(f"Hello \"{first}\",",end=" ")
 print("Welcome to a simple calculator\n")
 
 #Ask the user to enter numbers
