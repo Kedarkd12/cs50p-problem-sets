@@ -5,8 +5,8 @@ print(f"Hello \"{first}\",",end=" ")
 print("Welcome to a simple calculator\n")
 
 #Ask the user to enter numbers
-num1=float(input("Enter the first number:"))
-num2=float(input("Enter the second number:"))
+num1=int(input("Enter the first number:"))
+num2=int(input("Enter the second number:"))
 
 #ask the user the operation to be performed
 op=int(input("\nFrom the below list of operations:\n   1.Addition\n   2.Subtraction\n   3.Multiplication\n   4.Division\nEnter the number of the operation you want to perform:"))
@@ -21,6 +21,6 @@ def get_operation_selected(op):
         case 3:
             print(f"\n{num1} * {num2} = {num1*num2}")
         case 4:
-            print(f"\n{num1} / {num2} = {num1/num2}")
+            print(f"\n{float(num1)} / {float(num2)} = {round(num1/num2,2)}")
 
 get_operation_selected(op)
