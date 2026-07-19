@@ -48,7 +48,7 @@ for j in k:
 
 #vanity plate
 def main():
-    plate = input("Plate: ")
+    plate = input("\nPlate: ")
     if is_valid(plate):
         print("Valid")
     else:
